@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="100dp"
+              android:paddingLeft="450dp"
+              android:orientation="vertical">
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Your Profile"
+            android:background="#FFFF00"
+            android:width="300dp"
+            android:onClick="viewProfile"    />
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get a Recommendation"
+            android:background="#FF0000"
+            android:width="300dp"
+            android:onClick="getRecommendation"    />
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TV Guide"
+            android:background="#0000FF"
+            android:width="300dp"
+            android:onClick="getListing"    />
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search for a Show"
+            android:background="#00FF00"
+            android:width="300dp"
+            android:onClick="getShow"    />
+</LinearLayout>

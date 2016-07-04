@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="100dp"
+              android:paddingBottom="300dp"
+              android:paddingLeft="500dp"
+              android:orientation="vertical">
+    <EditText android:id="@+id/username_message"
+              android:layout_weight="1"
+              android:layout_width="200dp"
+              android:layout_height="50dp"
+              android:hint="Username" />
+    <EditText android:id="@+id/password_message"
+              android:layout_weight="1"
+              android:layout_width="200dp"
+              android:layout_height="50dp"
+              android:hint="Password" />
+    <EditText android:id="@+id/age_message"
+              android:layout_weight="1"
+              android:layout_width="200dp"
+              android:layout_height="50dp"
+              android:hint="Age" />     
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+        <RadioButton android:id="@+id/radio_male"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="male"
+                     android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_female"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="female"
+                     android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>       
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:text="Sign Up"
+        android:onClick="signUpRequest" />
+</LinearLayout>

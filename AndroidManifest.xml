@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.android"
+          android:versionCode="1"
+          android:versionName="1.0">
+    
+    <uses-sdk android:minSdkVersion="11"/>
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <application android:label="  Search:Rate:Recommend  -  A TV Content Recommender System" 
+                 android:icon="@drawable/tv" 
+                 android:debuggable="true"
+                 android:theme="@android:style/Theme.Holo.Light">
+       
+        <activity android:name="MainActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+       
+        <activity android:name="com.android.DisplayMessageActivity"
+                  android:label="@string/title_activity_display_message"
+                  android:parentActivityName="com.android.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.MainActivity" />
+        </activity>
+        
+        <activity android:name="com.android.StartScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.android.SignUp"
+                  android:parentActivityName="com.android.StartScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.StartScreen" />
+        </activity>
+        
+        <activity android:name="com.android.LogIn"
+                  android:parentActivityName="com.android.StartScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.StartScreen" />
+        </activity>
+        
+        <activity android:name="com.android.HomeScreen"
+                  android:parentActivityName="com.android.LogIn" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.LogIn" />
+        </activity>
+        
+        <activity android:name="com.android.SearchScreen"
+                  android:parentActivityName="com.android.HomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.HomeScreen" />
+        </activity>
+        
+        <activity android:name="com.android.ShowScreen"
+                  android:parentActivityName="com.android.SearchScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.SearchScreen" />
+        </activity>
+        
+        <activity android:name="com.android.ProfileScreen"
+                  android:parentActivityName="com.android.HomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.HomeScreen" />
+        </activity>
+        
+        <activity android:name="com.android.RatingScreen"
+                  android:parentActivityName="com.android.ProfileScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.ProfileScreen" />
+        </activity>
+        
+        <activity android:name="com.android.TVGuideScreen"
+                  android:parentActivityName="com.android.HomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.HomeScreen" />
+        </activity>
+        
+    </application>
+    
+</manifest>
